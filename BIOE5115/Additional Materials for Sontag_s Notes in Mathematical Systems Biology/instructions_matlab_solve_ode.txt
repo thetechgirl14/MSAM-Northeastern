@@ -1,0 +1,43 @@
+﻿super quick intro to solving ODE’s in MATLAB
+
+
+1. Create an m-file, say “myode.m” like this, and save it into the directory (folder) where you will work:
+
+
+function dydt = myode(t,y) 
+  % the “y” is used to pass the current state to the ode solver
+  % this creates an empty column vector that you can fill with your derivatives
+  dydt = zeros(2,1); 
+ % (obviously, for a system of 4 equations, you’d write zeros(4,1), and so on)
+ % now specify the equations; this is just an example
+  dydt(1) = y(2); 
+  dydt(2) = 1000*(1 - y(1)^2)*y(2) - y(1); 
+% we interpret y(1) as y1, etc., and dydt(1) as dy1/dt, etc.
+end
+
+
+2. This solves the ODE using the above file myode.m; place this in a new m-file
+
+
+function [T,Y] = solve_myode
+   tspan = [0 3000]; % says to solve in interval [0,3000]
+   y1_0 = 2; % first initial condition
+   y2_0 = 0; % second initial condiiton
+   % this is the key command: 
+   % use “ode15s” to solve using function myode.m and given final time and initial conditions
+   % you can use ode45 instead of ode15s, which is a ‘stiff” system solver; slower (but more accurate) sometimes
+   [T,Y] = ode15s(@myode,tspan,[y1_0 y2_0]);   
+   % now T and Y have the times and points at which the solutions as approximated; so can plot:
+   plot(T,Y(:,1),'linewidth',3,'color','red') 
+end
+
+To solve the ODE, simply type in your matlab screen:
+
+solve_myode;
+
+(the semicolons are to not dislay results).
+You can also type:
+[T,Y] = solve_myode;
+if you want to save the results for further processing.
+
+

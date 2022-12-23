@@ -1,0 +1,440 @@
+<h1 id="instructions">Instructions</h1>
+<p>Answer each problem to the best of your ability. Fully read instructions for all problems. Justify or explain your answers when appropriate. Partial credit will be given for answers that are partially correct. Points will be deducted for incorrect statements even if all other parts of your answer are correct.</p>
+<p>You may use notes and references from this class while taking the quiz. You may use a Python 3 interpreter. You may <strong>NOT</strong> use external websites or other online resources.</p>
+<p>You may <strong>NOT</strong> collaborate with other students while taking the quiz, or communicate any information about the quiz that may give any student an unfair advantage.</p>
+<p>All questions are written assuming Python unless otherwise specified. Code you write may use built-in functions, but may <strong>NOT</strong> rely on any imported modules.</p>
+<p>By submitting your answers, you agree to the following:</p>
+<p><em>I promise I will not cheat on this quiz. I will neither give nor receive any unauthorized assistance. I will not share information about the quiz with anyone who may be taking it at a different time. I have not been told anything about the quiz by someone who has taken it earlier.</em></p>
+<hr />
+<h1 id="quiz">Quiz</h1>
+<hr />
+<h2 id="multiple-choice">Multiple choice</h2>
+<p>For each problem, choose the <strong>best</strong> answer for each question.</p>
+<h4 id="a-function-defined-as-part-of-a-class-definition-is-called-what">A function defined as part of a class definition is called what?</h4>
+<ul>
+<li><ol type="a">
+<li>magic</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>class function</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>hook</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>callable</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>method</li>
+</ol></li>
+</ul>
+<h4 id="a-concrete-object-of-a-class-is-called-what">A concrete object of a class is called what?</h4>
+<ul>
+<li><ol type="a">
+<li>instance</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>function</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>attribute</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>method</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>variable</li>
+</ol></li>
+</ul>
+<h4 id="what-is-the-proper-way-to-create-an-instance-of-person">What is the proper way to create an instance of Person?</h4>
+<pre><code>class Person:
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender</code></pre>
+<ul>
+<li><ol type="a">
+<li><code>Person()</code></li>
+</ol></li>
+<li><ol start="2" type="a">
+<li><code>Person.__init__("Mary", 31, "F")</code></li>
+</ol></li>
+<li><ol start="3" type="a">
+<li><code>Person("Aiden", 26, None)</code></li>
+</ol></li>
+<li><ol start="4" type="a">
+<li><code>Person("John", 78)</code></li>
+</ol></li>
+<li><ol start="5" type="a">
+<li><code>Person.__new__("John", 78, "M")</code></li>
+</ol></li>
+</ul>
+<h4 id="why-can-an-array-be-sequentially-traversed-faster-than-a-linked-list-on-average-to-sequentially-traverse-means-to-visit-every-item-in-order.">Why can an array be sequentially traversed faster than a linked list on average? (To sequentially traverse means to visit every item in order.)</h4>
+<ul>
+<li><ol type="a">
+<li>Traversing an array is O(1)</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Accessing an item at random from an array is O(1)</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Items in an array are stored contiguously in memory</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Traversing a linked list is O(n log n)</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Accessing the next node in a linked list is O(n)</li>
+</ol></li>
+</ul>
+<h4 id="why-is-insertion-an-expensive-operation-on-an-array">Why is insertion an expensive operation on an array?</h4>
+<ul>
+<li><ol type="a">
+<li>New memory may need to be allocated and items must be copied into place</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>It is O(n) to traverse to the offset where the item should be inserted</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>It is O(log n) to traverse to the offset where the item should be inserted</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Arrays are immutable, so any modification creates a copy</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Insertion is not an expensive operation on an array</li>
+</ol></li>
+</ul>
+<h4 id="what-is-the-time-complexity-of-a-lookup-for-a-hash-table-with-a-very-large-load-factor">What is the time complexity of a lookup for a hash table with a <em>very large</em> load factor?</h4>
+<ul>
+<li><ol type="a">
+<li>O(1)</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>O(log n)</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>O(n log n)</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>O(n)</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>O(n^2)</li>
+</ol></li>
+</ul>
+<h4 id="what-is-the-time-complexity-to-find-a-node-in-a-balanced-binary-search-tree">What is the time complexity to find a node in a <em>balanced</em> binary search tree?</h4>
+<ul>
+<li><ol type="a">
+<li>O(1)</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>O(log n)</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>O(n log n)</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>O(n)</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>O(n^2)</li>
+</ol></li>
+</ul>
+<h4 id="when-efficiently-traversing-a-binary-search-tree-to-find-the-number-16-what-is-a-possible-sequence-of-nodes-examined">When efficiently traversing a binary search tree to find the number 16, what is a possible sequence of nodes examined?</h4>
+<ul>
+<li><ol type="a">
+<li>13, 19, 17, 16</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>13, 19, 17, 20, 16</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>13, 19, 12, 16</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>13, 12, 10, 16</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Any of these sequences is possible</li>
+</ol></li>
+</ul>
+<h4 id="what-is-the-standard-notation-for-a-number-that-in-scientific-notation-has-an-exponent-of-3-and-a-mantissa-of-4">What is the standard notation for a number that in scientific notation has an exponent of 3 and a mantissa of 4?</h4>
+<ul>
+<li><ol type="a">
+<li>3000</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>4000</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>30000</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>40000</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>None of these</li>
+</ol></li>
+</ul>
+<h4 id="for-a-20-x-10-matrix-a-stored-as-an-array-in-column-major-order-how-do-we-access-the-matrix-element-a4-6">For a 20 x 10 matrix A stored as an array in column-major order, how do we access the matrix element A[4, 6]?</h4>
+<ul>
+<li><ol type="a">
+<li>A.data[6 * 20 + 4]</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>A.data[6 * 10 + 4]</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>A.data[4 * 20 + 6]</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>A.data[4 * 10 + 6]</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>A.data[20 * 4 + 10 * 6]</li>
+</ol></li>
+</ul>
+<h4 id="for-a-20-x-10-matrix-a-stored-as-an-array-in-row-major-order-how-do-we-access-the-matrix-element-a4-6">For a 20 x 10 matrix A stored as an array in row-major order, how do we access the matrix element A[4, 6]?</h4>
+<ul>
+<li><ol type="a">
+<li>A.data[6 * 20 + 4]</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>A.data[6 * 10 + 4]</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>A.data[4 * 20 + 6]</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>A.data[4 * 10 + 6]</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>A.data[20 * 4 + 10 * 6]</li>
+</ol></li>
+</ul>
+<h4 id="what-is-the-worst-case-complexity-for-accessing-elements-of-a-matrix-stored-as-an-array">What is the worst case complexity for accessing elements of a matrix stored as an array?</h4>
+<ul>
+<li><ol type="a">
+<li>O(1)</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>O(n)</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>O(n^2)</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>O(log n)</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>O(n log n)</li>
+</ol></li>
+</ul>
+<hr />
+<h2 id="multiple-multiple-choice">Multiple-multiple choice</h2>
+<p>For each problem, choose <strong>all</strong> correct answers and/or statements.</p>
+<h4 id="object-oriented-programming-oop-concepts-include-choose-all-that-apply">Object-oriented programming (OOP) concepts include (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>class</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>instance</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>method</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>functional</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>closure</li>
+</ol></li>
+</ul>
+<h4 id="features-of-object-oriented-programming-oop-include-choose-all-that-apply">Features of object-oriented programming (OOP) include (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>encapsulation</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>composition</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>inheritance</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>polymorphism</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>currying</li>
+</ol></li>
+</ul>
+<h4 id="advantages-of-using-getter-and-setter-methods-are-choose-all-that-apply">Advantages of using “getter” and “setter” methods are (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>avoiding invalid object states due to setting public attributes</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>updating class internals without breaking external code</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>clearly distinguish intent between “public” and “private” attributes</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>prevent sub-classes from re-defining private methods</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>prevent sub-classes from inheriting private attributes</li>
+</ol></li>
+</ul>
+<h4 id="this-data-structures-can-be-built-using-only-nodes-that-store-a-data-attributes-and-links-to-other-nodes-choose-all-that-apply">This data structure(s) can be built using <em>only</em> “nodes” that store a data attribute(s) and link(s) to other nodes (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>Linked list</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Binary search tree</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Array</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Dynamic array</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Hash table</li>
+</ol></li>
+</ul>
+<h4 id="the-following-abstract-data-structures-can-be-built-using-either-linked-lists-or-arrays-choose-all-that-apply">The following <em>abstract</em> data structure(s) can be built using either linked lists or arrays (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>Queue</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Stack</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Deque</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Hash table</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Binary search tree</li>
+</ol></li>
+</ul>
+<h4 id="the-following-are-examples-of-concrete-data-structures-choose-all-that-apply">The following are examples of <em>concrete</em> data structure(s) (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>Hash table</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Binary search tree</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Linked list</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Associative array</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Stack</li>
+</ol></li>
+</ul>
+<h4 id="a-hash-functions-must-satisfy-the-following-properties-choose-all-that-apply">A hash functions must satisfy the following properties (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>Map input keys to a fixed number of buckets</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Guarantee equal keys will generate equal hash codes</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Guarantee equal hash codes were generated by equal keys</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Map buckets and corresponding hash codes to their possible keys</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Provide a one-to-one relationship between keys and buckets</li>
+</ol></li>
+</ul>
+<h4 id="describe-the-asymptotic-complexity-of-3n2-100n-logn-choose-all-that-apply">Describe the asymptotic complexity of 3n^2 + 100n + log(n) (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>O(n^100)</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>O(n^2)</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>O(n)</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>O(log n)</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Ω(log n)</li>
+</ol></li>
+</ul>
+<h4 id="describe-the-asymptotic-complexity-of-99n3-n2-500-choose-all-that-apply">Describe the asymptotic complexity of 99n^3 + n^2 + 500 (choose all that apply):</h4>
+<ul>
+<li><ol type="a">
+<li>O(n^99)</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>O(n^3)</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>𝛩(n^3)</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Ω(n^3)</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Ω(n^4)</li>
+</ol></li>
+</ul>
+<h4 id="which-sparse-matrix-representations-are-most-efficient-for-linear-algebra-computations-choose-all-that-apply">Which sparse matrix representations are most efficient for linear algebra computations? (choose all that apply)</h4>
+<ul>
+<li><ol type="a">
+<li>Dictionary of keys (DOK)</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>List of lists (LIL)</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Coordinate list (COO)</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Compressed sparse row (CSR)</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Compressed sparse column (CSC)</li>
+</ol></li>
+</ul>
+<hr />
+<h2 id="short-answer">Short answer</h2>
+<p>Fully answer each question to the best of your ability.</p>
+<h4 id="you-are-designing-and-implementing-a-linear-algebra-library.-what-data-structure-will-you-use-to-represent-dense-matrices-and-why-describe-the-advantages-and-disadvantages-of-this-choice.">You are designing and implementing a linear algebra library. What data structure will you use to represent dense matrices, and why? Describe the advantages and disadvantages of this choice.</h4>
+<hr />
+<h2 id="coding">Coding</h2>
+<h4 id="write-a-recursive-function-in-python-called-search_tree-that-traverses-a-binary-search-tree-and-returns-a-node-matching-the-given-key-value.-your-function-must-use-recursion-for-full-credit-you-may-access-attributes-directly-rather-than-define-gettersetter-methods.-you-do-not-need-to-implement-the-tree-itself-only-the-search_tree-function.-use-preformatted-text-style.">Write a <em>recursive</em> function in Python called <code>search_tree()</code> that traverses a binary search tree and returns a node matching the given key value. Your function must use recursion for full credit; you may access attributes directly rather than define getter/setter methods. You do not need to implement the tree itself, only the <code>search_tree()</code> function. (Use “Preformatted” text style.)</h4>
+<pre><code>class Node:
+    def __init__(self, key = None, left = None, right = None):
+        self.key = key
+        self.left = left
+        self.right = right
+
+def search_tree(node, key):
+    &quot;&quot;&quot;
+    Finds and returns the Node in a binary search tree with the given key.
+    
+    param node: In normal use, this should be the root Node of the tree. In recursive calls, this will be the Node currently being examined.
+    
+    param key: The value to search for in the tree. The Node containing this key will be returned.
+
+    returns: A Node with the given key, or None if no matching node is found.
+    &quot;&quot;&quot;
+    pass</code></pre>
