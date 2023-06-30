@@ -1,0 +1,14 @@
+This program accepts a condition number as input.  It then generates a
+random matrix, A, of that condition number.  It also generates a
+random vector b.  It then solves Ax=b, computes the residual, and
+reports the norm of the residual as a measure of the solver's error.
+It shows that as the condition number increases, the error increases. 
+
+Run as follows:
+
+test_condition_error(3)
+
+test_condition_error(300)
+
+test_condition_error(30000)
+

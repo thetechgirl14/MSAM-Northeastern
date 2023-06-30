@@ -1,0 +1,2 @@
+This directory holds a computation of sqrt(x) using continued
+fractions (Wallis method).  This is a class demo.

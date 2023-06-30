@@ -1,0 +1,13 @@
+This is a classroom demo.  It demonstrates both the benefit
+of pivoting as well as the O(n^3) complexity of Gaussian elimination. 
+
+To test pivoting:
+pivot_demo.  It compares my naive gauss impl (no pivoting) against
+Matlab's backslash linear solve operator (with pivoting).  It runs
+both methods on a badly conditioned matrix.
+
+To run timing:
+Turn on Gauss elimination for n=1000 and even n=2000 to get a more
+accurate fit for the time complexity.  Note that the program takes
+much longer to run for these matrix sizes -- the complexity is
+n^3 after all....

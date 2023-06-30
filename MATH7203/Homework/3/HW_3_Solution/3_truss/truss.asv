@@ -1,0 +1,20 @@
+h = 2;
+b = 1;
+theta = atan(b/h);
+A = makeA(theta);
+r = maker(15);
+f = A\(-r)
+
+for i = 1:12
+    if f(i) > 35
+        fprintf('Truss will break');
+    else f(i) < -25
+        fprintf('Truss will break');
+    end
+
+    fprintf("Truss won't ")
+end
+
+
+% if tension (+ve) < 35, if compression (-ve) < 25 
+% truss will break

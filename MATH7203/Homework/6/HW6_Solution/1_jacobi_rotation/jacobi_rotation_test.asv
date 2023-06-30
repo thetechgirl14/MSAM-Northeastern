@@ -1,0 +1,24 @@
+% Set the size of the random matrices to be generated
+n = 5;
+
+% Generate a random square matrix A
+A = rand(n);
+A
+% Choose two off-diagonal elements to be zeroed out
+i = 2;
+j = 4;
+
+% Get the Jacobi rotation matrix Qij that zeros out the chosen elements
+Qij = jacobi_rotation(A, i, j);
+Qij
+
+% Verify that the chosen elements have been zeroed out
+A_new = Qij' * A * Qij;
+
+if A_new(i, j) == 0 && A_new(j, i) == 0
+    disp('Off-diagonal elements successfully zeroed out!');
+    A_new
+else
+    A_new = Qij' * A_new * Qij;
+    %disp('Error: off-diagonal elements not zeroed out.');
+end

@@ -1,0 +1,11 @@
+This function creates a random square matrix B with random condition
+number k0.  It then creates the symmetric matrix A = B+B'.
+
+It then plots the surface of the quadratic form u'*A*u using Matlab's
+surf function.
+
+Next, the fcn makes a plot of the levelsets of u'*A"u using Matlab's
+contour function.
+
+The thing to execute is the function run_plots.
+

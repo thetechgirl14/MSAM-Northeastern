@@ -1,0 +1,20 @@
+This is a classroom demonstration.  To use it do:
+
+>> test_mysd
+------  Test gradient descent with matrix [25, 25] and tol = 1.000000e-05  ------
+K = 4.000000... Niter = 28  ... normres =  6.735709e-06.
+K = 25.000000... Niter = 177  ... normres =  9.871077e-06.
+K = 100.000000... Niter = 595  ... normres =  9.860751e-06.
+K = 400.000000... Niter = 2506  ... normres =  9.930844e-06.
+K = 2500.000000... Niter = 16611  ... normres =  9.992518e-06.
+K = 10000.000000... Niter = 70000  ... normres =  9.999191e-06.
+K = 40000.000000... Niter = 282900  ... normres =  9.999642e-06.
+>> test_mysd_JacobiPreconditioner
+------  Test preconditioned gradient descent with matrix [25, 25] and tol = 1.000000e-05  ------
+K = 4.000000... Niter = 22  ... normres =  5.681206e-06.
+K = 25.000000... Niter = 119  ... normres =  9.338814e-06.
+K = 100.000000... Niter = 267  ... normres =  9.647971e-06.
+K = 400.000000... Niter = 2387  ... normres =  9.986772e-06.
+K = 2500.000000... Niter = 4492  ... normres =  9.995395e-06.
+K = 10000.000000... Niter = 20103  ... normres =  9.998301e-06.
+K = 40000.000000... Niter = 49822  ... normres =  9.999556e-06.

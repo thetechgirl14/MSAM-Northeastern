@@ -1,0 +1,18 @@
+function [Sin] = svd_image(im)
+  
+  [~, S, ~] = svd(im); 
+  Sin = diag(S);
+ 
+  
+  nnz(Sin > 1e-12)
+  rank(S)
+
+  subplot(2,1,1)
+  plot(Sin)
+
+  hold on
+  
+  subplot(2,1,2)
+  semilogy(Sin)
+
+end
